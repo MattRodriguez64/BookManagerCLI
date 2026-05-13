@@ -33,3 +33,6 @@ class Book:
 
     def get_isAvailable(self) -> bool: return self.__isAvailable
     def set_isAvailable(self, newIsAvailable:bool) -> None: self.__isAvailable = newIsAvailable
+
+    def save_format(self) -> dict : 
+        return {"id": self.get_id(), "title":self.get_title(), "author":self.get_author(), "year": self.get_year(), "category": self.get_category(), "isAvailable":self.get_isAvailable()}
