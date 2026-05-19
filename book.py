@@ -2,13 +2,13 @@
 
 
 class Book:
-    def __init__(self, id:int, title:str, author:str, year:int, category:str, isAvailable: bool):
-        self.__id = id
+    def __init__(self, title:str, author:str, year:int, category:str):
+        self.__id = -1
         self.__title = title
         self.__author = author
         self.__year = year
         self.__category = category
-        self.__isAvailable = isAvailable
+        self.__isAvailable = True
 
     def __str__(self):
         return f"{self.get_id()} : {self.get_title()} : {self.get_author()} : {self.get_year()} : {self.get_category()} : {self.get_isAvailable()}"
